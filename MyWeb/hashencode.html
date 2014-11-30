@@ -1,0 +1,32 @@
+<html><head>
+<title>JavaScript MD5</title>
+</head>
+<body BGCOLOR="#FFFFFF" LINK="#000080" VLINK="#6060C0" TEXT="#000000">
+
+<p><table width=100% background="/patt.gif" bgcolor="0000AA" cellpadding=1 cellspacing=0><tr><td><font size=+1 face=arial color=white><b>&nbsp;Demonstration</b></font></td></tr></table><p>
+<script language="JavaScript" src="md4.js"></script>
+<script language="JavaScript" src="md5.js"></script>
+<script language="JavaScript" src="md6.js"></script>
+<script language="JavaScript" src="sha1.js"></script>
+<script language="JavaScript" src="sha256.js"></script>
+<script language="JavaScript" src="sha512.js"></script>
+<script language="JavaScript" src="sha3.js"></script>
+<script language="JavaScript" src="digest.js"></script>
+
+<blockquote><form><table>
+<tr><td > <font color=blue size=+1>Input</font>  </td><td > <input type=text name=input size=60> </td></tr>
+<tr><td > <font color=blue size=+1>Calculate</font> 
+</td><td > <center>
+<input type=button value=MD4 onclick="hash.value = calcMD4(input.value)"> 
+<input type=button value=MD5 onclick="hash.value = calcMD5(input.value)"> 
+<input type=button value=MD6 onclick="hash.value = Digest.sha256(input.value).base64()"> 
+<input type=button value=SHA-1 onclick="hash.value = calcSHA1(input.value)">
+<input type=button value=SHA-2 32 onclick="hash.value = CryptoJS.SHA256(input.value)">
+<input type=button value=SHA-2 64 onclick="hash.value = CryptoJS.SHA512(input.value)">
+<input type=button value=SHA-3 onclick="hash.value = CryptoJS.SHA3(input.value)">
+</center> </td></tr>
+<tr><td > <font color=blue size=+1>Result</font> </td><td > <input type=text name=hash size=60> </td></tr>
+</table></form>
+<p><code>
+
+</body></html>
